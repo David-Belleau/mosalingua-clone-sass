@@ -1,0 +1,136 @@
+#sidebar {
+  position: $position-fix;
+  z-index: 9;
+  @include breakpoints("laptop-tablet-mobile-xl") {
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+  }
+}
+
+.sidebar__link--facebook,
+.sidebar__link--twitter,
+.sidebar__link--pinterest,
+.sidebar__link--linkedin,
+.sidebar__link--telegram,
+.sidebar__link--whatsapp,
+.sidebar__link--messenger,
+.sidebar__link--more,
+.sidebar__link--arrow {
+  display: flex;
+  flex-direction: column;
+  position: $position-rel;
+  top: 11rem;
+  padding: 0.4rem;
+  cursor: pointer;
+  @include breakpoints("laptop-tablet-mobile-xl") {
+    flex-direction: row;
+    flex-grow: 1;
+    top: 0;
+  }
+}
+
+.sidebar__link--facebook {
+  background-color: $color-dark-blue;
+}
+
+.sidebar__link--twitter {
+  background-color: $color-sky-blue;
+}
+
+.sidebar__link--twitter span {
+  align-self: center;
+  font-weight: $font-semibold;
+  color: $color-white;
+}
+
+.sidebar__link--pinterest {
+  background-color: $color-red;
+}
+
+.sidebar__link--linkedin {
+  background-color: $color-middle-blue;
+}
+
+.sidebar__link--telegram {
+  background-color: $color-light-blue;
+}
+
+.sidebar__link--whatsapp {
+  background-color: $color-apple-green;
+}
+
+.sidebar__link--messenger {
+  background-color: $color-blue;
+}
+
+.sidebar__link--more {
+  background-color: $color-orange;
+}
+
+.sidebar__link--facebook img,
+.sidebar__link--twitter img,
+.sidebar__link--pinterest img,
+.sidebar__link--linkedin img,
+.sidebar__link--telegram img,
+.sidebar__link--whatsapp img,
+.sidebar__link--messenger img,
+.sidebar__link--more img {
+  width: 3.2rem;
+  @include breakpoints("laptop-tablet-mobile-xl") {
+    width: 100%;
+  }
+}
+
+.sidebar__link--facebook p,
+.sidebar__link--twitter p,
+.sidebar__link--pinterest p,
+.sidebar__link--linkedin p,
+.sidebar__link--telegram p,
+.sidebar__link--whatsapp p,
+.sidebar__link--messenger p,
+.sidebar__link--more p,
+.sidebar__link--arrow p {
+  display: $display-none;
+  position: $position-abs;
+  left: 2rem;
+  z-index: 1;
+  padding: 0.5rem;
+  border: 0.1rem solid $color-black;
+  font-size: 1.2rem;
+  background-color: $color-white;
+  color: $color-black;
+}
+
+.sidebar__link--facebook:hover p,
+.sidebar__link--twitter:hover p,
+.sidebar__link--pinterest:hover p,
+.sidebar__link--linkedin:hover p,
+.sidebar__link--telegram:hover p,
+.sidebar__link--whatsapp:hover p,
+.sidebar__link--messenger:hover p,
+.sidebar__link--more:hover p,
+.sidebar__link--arrow:hover p {
+  display: $display-block;
+}
+
+.sidebar__link--arrow {
+  @include breakpoints("laptop-tablet-mobile-xl") {
+    display: $display-none;
+  }
+}
+
+.sidebar__link--arrow img {
+  width: 1.7rem;
+  margin: 1rem 1.5rem 0 0;
+}
+
+#sidebar--block {
+  display: $display-none;
+  @include breakpoints("laptop-tablet-mobile-xl") {
+    display: $display-block;
+    height: 4rem;
+    background-color: $color-violet;
+  }
+}

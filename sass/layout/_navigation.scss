@@ -1,0 +1,354 @@
+#nav {
+  grid-area: 2 / 1 / 3 / 3;
+  background-color: $color-brown;
+  padding: 1.7rem 0;
+  @include breakpoints("tablet-mobile-md") {
+    padding: 1.5rem;
+    background-color: $color-white;
+  }
+}
+
+.nav__content {
+  @include breakpoints("tablet-mobile-md") {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.nav__link {
+  display: $display-none;
+  @include breakpoints("tablet-mobile-md") {
+    display: $display-block;
+    margin: 0 auto;
+  }
+}
+
+#navigate,
+#navigate-responsive1,
+#navigate-responsiveApps,
+#navigate-responsive2,
+#navigate-responsiveResources,
+#navigate-responsive3,
+#navigate-responsive4,
+label {
+  display: $display-none;
+  position: $position-rel;
+}
+
+.nav__label--checked {
+  @include breakpoints("tablet-mobile-md") {
+    display: $display-block;
+    z-index: 10;
+    cursor: pointer;
+  }
+}
+
+#navigate:checked + .nav__label--checked {
+  @include breakpoints("tablet-mobile-md") {
+    position: $position-fix;
+  }
+}
+
+.nav__span--add {
+  @include breakpoints("tablet-mobile-md") {
+    display: $display-block;
+    position: $position-rel;
+    width: 2rem;
+    height: 0.2rem;
+    background-color: $color-black;
+  }
+}
+
+#navigate:checked + .nav__label--checked .nav__span--add {
+  @include breakpoints("tablet-mobile-md") {
+    background-color: transparent;
+  }
+}
+
+.nav__span--add::before,
+.nav__span--add::after {
+  @include breakpoints("tablet-mobile-md") {
+    content: "";
+    display: $display-block;
+    position: $position-abs;
+    width: 2rem;
+    height: 0.2rem;
+    left: 0;
+    transition: all 0.2s;
+    background-color: $color-black;
+  }
+}
+
+.nav__span--add::before {
+  @include breakpoints("tablet-mobile-md") {
+    top: -0.6rem;
+  }
+}
+
+#navigate:checked + .nav__label--checked .nav__span--add:before {
+  @include breakpoints("tablet-mobile-md") {
+    top: 0;
+    transform: rotate(130deg);
+  }
+}
+
+.nav__span--add::after {
+  @include breakpoints("tablet-mobile-md") {
+    top: 0.6rem;
+  }
+}
+
+#navigate:checked + .nav__label--checked .nav__span--add:after {
+  @include breakpoints("tablet-mobile-md") {
+    top: 0;
+    transform: rotate(-130deg);
+  }
+}
+
+nav {
+  @include breakpoints("tablet-mobile-md") {
+    display: $display-none;
+    position: $position-fix;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    top: 5rem;
+    left: 0;
+    background-color: $color-white;
+    overflow-y: auto;
+  }
+}
+
+#navigate:checked ~ nav {
+  @include breakpoints("tablet-mobile-md") {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.nav {
+  @include breakpoints("tablet-mobile-md") {
+    margin-top: 2rem;
+  }
+}
+
+.nav__ul {
+  @extend %flex-row-centers;
+  position: $position-rel;
+  gap: 7rem;
+  font-weight: $font-regular;
+  @include breakpoints("tablet-mobile-md") {
+    display: $display-none;
+    flex-direction: column;
+    top: 50%;
+    left: 55%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#navigate:checked ~ nav .nav__ul {
+  @include breakpoints("tablet-mobile-md") {
+    display: $display-block;
+  }
+}
+
+.nav__img--block {
+  @include breakpoints("tablet-mobile-md") {
+    display: $display-block;
+  }
+}
+
+.nav__ul label img {
+  position: $position-abs;
+  bottom: 2.6rem;
+  right: Min(9.5rem, 11vw);
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav__dropdown--hover label img{
+  position: $position-abs;
+  bottom: 2.6rem;
+  right: Min(15rem, 17vw);
+}
+
+#navigate-responsive1:checked + label img,
+#navigate-responsiveApps:checked + label img,
+#navigate-responsive2:checked + label img,
+#navigate-responsiveResources:checked + label img,
+#navigate-responsive3:checked + label img,
+#navigate-responsive4:checked + label img {
+  transform: rotate(180deg);
+}
+
+.nav__img--block img {
+  display: $display-none;
+  @include breakpoints("tablet-mobile-md") {
+    display: $display-block;
+    width: 2.2rem;
+    cursor: pointer;
+  }
+}
+
+.nav__ul li:not(:last-child)::after {
+  @include breakpoints("tablet-mobile-md") {
+    content: "";
+    position: $position-abs;
+    width: 91%;
+    height: 0.1rem;
+    margin-top: -2rem;
+    background-color: #dee0e9;
+  }
+}
+
+.nav__ul a {
+  font-size: 1.5rem;
+  color: $color-white;
+  @include breakpoints("tablet-mobile-md") {
+    display: $display-block;
+    padding-bottom: 3rem;
+    font-weight: $font-semibold;
+    color: $color-black;
+  }
+}
+
+.nav__dropdown--checked1,
+.nav__dropdown--checked2,
+.nav__dropdown--checked3,
+.nav__dropdown--checked4,
+.nav-dropdownApps,
+.nav-dropdownResources {
+  @include breakpoints("laptop-tablet-min") {
+    display: $display-none;
+    position: $position-abs;
+    z-index: 1;
+    background-color: $color-white;
+    min-width: 22rem;
+    box-shadow: 0 0 0.4rem 0.1rem $color-gray;
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+  @include breakpoints("tablet-mobile-md") {
+    display: $display-none;
+    margin-left: 2rem;
+  }
+}
+
+.nav__dropdown--hover,
+.nav__dropdown--hover {
+  position: $position-rel;
+}
+
+.nav__ul li:nth-child(1):hover,
+.nav__ul li:nth-child(2):hover,
+.nav__ul li:nth-child(3):hover,
+.nav__ul li:nth-child(4):hover {
+  @include breakpoints("laptop-tablet-min") {
+    @include navigation(
+      ".nav__dropdown--checked1",
+      ".nav__dropdown--checked2",
+      ".nav__dropdown--checked3",
+      ".nav__dropdown--checked4"
+    );
+  }
+}
+
+#navigate-responsive1:checked ~,
+#navigate-responsive2:checked ~,
+#navigate-responsive3:checked ~,
+#navigate-responsive4:checked ~ {
+  @include navigation(
+    ".nav__dropdown--checked1",
+    ".nav__dropdown--checked2",
+    ".nav__dropdown--checked3",
+    ".nav__dropdown--checked4"
+  );
+}
+
+.nav-dropdownApps,
+.nav-dropdownResources {
+  @include breakpoints("laptop-tablet-min") {
+    top: 1rem;
+    left: 18rem;
+  }
+}
+
+.nav__dropdown--hover:hover .nav-dropdownApps,
+.nav__dropdown--hover:hover .nav-dropdownResources {
+  @include breakpoints("laptop-tablet-min") {
+    display: $display-block;
+  }
+}
+
+#navigate-responsiveApps:checked ~ .nav-dropdownApps,
+#navigate-responsiveResources:checked ~ .nav-dropdownResources {
+  display: $display-block;
+}
+
+.nav__dropdown--checked1 p,
+.nav__dropdown--checked2 p,
+.nav__dropdown--checked3 p,
+.nav__dropdown--checked4 p,
+.nav-dropdownApps p,
+.nav-dropdownResources p {
+  @include breakpoints("laptop-tablet-min") {
+    display: $display-block;
+    padding: 1rem;
+    font-weight: $font-regular;
+    font-size: 1.4rem;
+    color: $color-black;
+  }
+  @include breakpoints("tablet-mobile-md") {
+    font-weight: normal;
+  }
+}
+
+.nav__footer{
+  display: $display-none;
+  @include breakpoints("tablet-mobile-md") {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12rem 0 0 0;
+    padding: 3rem 0 6rem 0;
+    background-color: $color-light-gray;
+  }
+}
+
+.nav__btn {
+  border: none;
+  border-radius: 3rem;
+  padding: 1.5rem 12rem;
+  font-weight: $font-semibold;
+  font-size: 1.5rem;
+  background-color: $color-brown;
+  color: $color-white;
+  cursor: pointer;
+  @include breakpoints("mobile-xs") {
+    padding: 1.5rem 9rem;
+  }
+}
+
+.nav__div {
+  @extend %flex-row-centers;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.nav__div p:nth-child(1) {
+  font-size: 1.5rem;
+}
+
+.nav__p--block {
+  display: $display-none;
+  position: $position-abs;
+  top: -23.6rem;
+  z-index: 1;
+  border: 0.1rem solid $color-white;
+  padding: 0.4rem 1.7rem 0.5rem 2rem;
+  background-color: $color-white;
+}
