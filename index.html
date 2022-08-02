@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Clone de Mosalingua" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Mosalingua Clone</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./public/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./public/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./public/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <a class="sidebar__link--facebook">
+        <img
+          src="./public/images/sidebar/sidebar-facebook.svg"
+          alt="Logo de Facebook"
+        />
+        <p>Facebook</p>
+      </a>
+
+      <a class="sidebar__link--twitter">
+        <span>1.1K</span>
+        <img
+          src="./public/images/sidebar/sidebar-twitter.svg"
+          alt="Logo de Twitter"
+        />
+        <p>Twitter</p>
+      </a>
+
+      <a class="sidebar__link--pinterest">
+        <img
+          src="./public/images/sidebar/sidebar-pinterest.svg"
+          alt="Logo de Pinterest"
+        />
+        <p>Pinterest</p>
+      </a>
+
+      <a class="sidebar__link--linkedin">
+        <img
+          src="./public/images/sidebar/sidebar-linkedin.svg"
+          alt="Logo de Linkedin"
+        />
+        <p>Linkedin</p>
+      </a>
+
+      <a class="sidebar__link--telegram">
+        <img
+          src="./public/images/sidebar/sidebar-telegram.svg"
+          alt="Logo de Telegram"
+        />
+        <p>Telegram</p>
+      </a>
+
+      <a class="sidebar__link--whatsapp">
+        <img
+          src="./public/images/sidebar/sidebar-whatsapp.svg"
+          alt="Logo de Whatsapp"
+        />
+        <p>Whatsapp</p>
+      </a>
+
+      <a class="sidebar__link--messenger">
+        <img
+          src="./public/images/sidebar/sidebar-messenger.svg"
+          alt="Logo de Messenger"
+        />
+        <p>Messenger</p>
+      </a>
+
+      <a class="sidebar__link--more">
+        <img
+          src="./public/images/sidebar/sidebar-more.svg"
+          alt="Trois points"
+        />
+        <p>More</p>
+      </a>
+
+      <a class="sidebar__link--arrow">
+        <img src="./public/images/sidebar/sidebar-arrow.svg" alt="Flèche" />
+        <p>Hide</p>
+      </a>
+    </div>
+    <!-- Sidebar -->
+
+    <!-- Header -->
+    <header>
+      <div id="header">
+        <a href="#header" class="header__link">
+          <img
+            src="./public/images/header/logo-mosa-header.png"
+            alt="Logo de Mosalingua"
+          />
+        </a>
+
+        <div class="header__btns">
+          <button class="header__btn--login">Se connecter</button>
+          <button class="header__btn--focus">
+            <div class="header__p">
+              <p>French</p>
+              <img
+                src="./public/images/header/header-icon.svg"
+                alt="Flèche vers le bas"
+              />
+            </div>
+            <div class="header__p--block">
+              <p>Deutsch</p>
+              <p>English</p>
+              <p>Español</p>
+              <p>Italiano</p>
+              <p>Português</p>
+              <p>繁體中文</p>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Navigation -->
+      <div id="nav">
+        <div class="nav__content">
+          <!-- Responsive tablet / mobile -->
+          <a href="#nav" class="nav__link">
+            <img
+              src="./public/images/header/logo-mosa-header.png"
+              alt="Logo de Mosalingua"
+            />
+          </a>
+          <input type="checkbox" id="navigate" />
+          <label for="navigate" class="nav__label--checked">
+            <span class="nav__span--add"></span>
+          </label>
+          <!-- Responsive tablet / mobile  -->
+
+          <nav>
+            <div class="nav">
+              <ul class="nav__ul">
+                <li>
+                  <a>Nos cours &amp; applis</a>
+
+                  <!-- Responsive tablet / mobile -->
+                  <input type="checkbox" id="navigate-responsive1" />
+                  <label for="navigate-responsive1" class="nav__img--block">
+                    <img
+                      src="./public/images/header/header-icon.svg"
+                      alt="Flèche vers le bas"
+                    />
+                  </label>
+                  <!-- Responsive tablet / mobile -->
+
+                  <div class="nav__dropdown--checked1">
+                    <a><p>Tous nos cours</p></a>
+                    <div class="nav__dropdown--hover">
+                      <a> <p>Nos Applis</p> </a>
+
+                      <!-- Responsive tablet / mobile -->
+                      <input type="checkbox" id="navigate-responsiveApps" />
+                      <label
+                        for="navigate-responsiveApps"
+                        class="nav__img--block"
+                      >
+                        <img
+                          src="./public/images/header/header-icon.svg"
+                          alt="Flèche vers le bas"
+                        />
+                      </label>
+                      <!-- Responsive tablet / mobile -->
+
+                      <div class="nav-dropdownApps">
+                        <a><p>Anglais</p></a>
+                        <a><p>Anglais Professionnel</p></a>
+                        <a><p>Anglais TOEIC</p></a>
+                        <a><p>Anglais TOEFL</p></a>
+                        <a><p>Anglais Médical</p></a>
+                        <a><p>Espagnol</p></a>
+                        <a><p>Espagnol des Affaires</p></a>
+                        <a><p>Italien</p></a>
+                        <a><p>Allemand</p></a>
+                        <a><p>Portugais</p></a>
+                        <a><p>Chinois mandarin</p></a>
+                        <a><p>Russe</p></a>
+                        <a><p>Français</p></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <a>Blog &amp; Ressources</a>
+
+                  <!-- Responsive tablet / mobile -->
+                  <input type="checkbox" id="navigate-responsive2" />
+                  <label for="navigate-responsive2" class="nav__img--block">
+                    <img
+                      src="./public/images/header/header-icon.svg"
+                      alt="Flèche vers le bas"
+                    />
+                  </label>
+                  <!-- Responsive tablet / mobile -->
+
+                  <div class="nav__dropdown--checked2">
+                    <a><p>Tous nos articles</p></a>
+                    <a><p>Par où commencer ?</p></a>
+                    <a><p>Le podcast The Language Lab de MosaLingua</p> </a>
+                    <a><p>Astuces et vidéos (YouTube)</p></a>
+                    <div class="nav__dropdown--hover">
+                      <a><p>Ressources</p></a>
+
+                      <!-- Responsive tablet / mobile -->
+                      <input
+                        type="checkbox"
+                        id="navigate-responsiveResources"
+                      />
+                      <label
+                        for="navigate-responsiveResources"
+                        class="nav__img--block"
+                      >
+                        <img
+                          src="./public/images/header/header-icon.svg"
+                          alt="Flèche vers le bas"
+                        />
+                      </label>
+                      <!-- Responsive tablet / mobile -->
+
+                      <div class="nav-dropdownResources">
+                        <a><p>Guides gratuis de conversations</p></a>
+                        <a
+                          ><p>
+                            eBook gratuit : Les 7 outils indispensables pour
+                            apprendre une langue
+                          </p></a
+                        >
+                        <a><p>Ressources pour apprendre l'anglais</p></a>
+                        <a><p>Ressources pour apprendre l'espagnol</p></a>
+                        <a><p>Ressources pour apprendre l'italien</p></a>
+                        <a><p>Ressources pour apprendre l'allemand</p></a>
+                        <a
+                          ><p>
+                            Ressources pour apprendre le portugais (du Brésil)
+                          </p></a
+                        >
+                        <a><p>Ressources pour apprendre le français</p></a>
+                        <a><p>Ressources pour apprendre le chinois</p></a>
+                        <a><p>Ressources pour apprendre le japonais</p></a>
+                        <a><p>Ressources pour apprendre le russe</p></a>
+                        <a><p>Ressources pour apprendre l'arabe</p></a>
+                        <a><p>Prononciation Anglaise</p></a>
+                        <a><p>Prononciation Espagnole</p></a>
+                        <a><p>Grammaire Anglaise - Le Guide Complet</p></a>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <a>&Agrave; propos</a>
+
+                  <!-- Responsive tablet / mobile -->
+                  <input type="checkbox" id="navigate-responsive3" />
+                  <label for="navigate-responsive3" class="nav__img--block">
+                    <img
+                      src="./public/images/header/header-icon.svg"
+                      alt="Flèche vers le bas"
+                    />
+                  </label>
+                  <!-- Responsive tablet / mobile -->
+
+                  <div class="nav__dropdown--checked3">
+                    <a><p>Notre équipe</p></a>
+                    <a><p>La méthode MOSALearning</p></a>
+                    <a><p>Témoignages</p></a>
+                    <a><p>Espace presse</p></a>
+                    <a><p>Espace Membre</p></a>
+                    <a><p>Offres d'emploi</p></a>
+                    <a><p>Devenir affilié</p></a>
+                  </div>
+                </li>
+                <li>
+                  <a>Entreprises &amp; CPF</a>
+
+                  <!-- Responsive tablet / mobile -->
+                  <input type="checkbox" id="navigate-responsive4" />
+                  <label for="navigate-responsive4" class="nav__img--block">
+                    <img
+                      src="./public/images/header/header-icon.svg"
+                      alt="Flèche vers le bas"
+                    />
+                  </label>
+                  <!-- Responsive tablet / mobile -->
+
+                  <div class="nav__dropdown--checked4">
+                    <a><p>Offre pour les entreprises</p></a>
+                    <a><p>Utiliser son CPF avec MosaLingua</p></a>
+                    <a><p>Nos formules CPF</p></a>
+                  </div>
+                </li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+
+            <!-- Responsive tablet / mobile  -->
+            <div class="nav__footer">
+              <button class="nav__btn">Se connecter</button>
+              <div class="nav__div">
+                <p>Langue du site :</p>
+                <button class="nav__btn--focus">
+                  <div class="nav__p">
+                    <p>French</p>
+                    <img
+                      src="./public/images/header/header-icon.svg"
+                      alt="Flèche vers le bas"
+                    />
+                  </div>
+                  <div class="nav__p--block">
+                    <p>Deutsch</p>
+                    <p>English</p>
+                    <p>Español</p>
+                    <p>Italiano</p>
+                    <p>Português</p>
+                    <p>繁體中文</p>
+                  </div>
+                </button>
+              </div>
+            </div>
+            <!-- Responsive tablet / mobile -->
+          </nav>
+        </div>
+        <!-- Navigation -->
+      </div>
+    </header>
+    <!-- Header -->
+
+    <!-- Languages -->
+    <div id="languages">
+      <div class="languages__bg--image">
+        <h1>
+          <span>La méthode intelligente</span> <br />
+          <span>pour apprendre une langue</span>
+        </h1>
+
+        <h2>Quelle langue apprenez-vous ?</h2>
+
+        <div class="languages__grid">
+          <div class="languages__img">
+            <img
+              src="./public/images/languages/english-flag.png"
+              alt="Drapeau anglais"
+            />
+            <p>Anglais</p>
+          </div>
+
+          <div class="languages__img">
+            <img
+              src="./public/images/languages/spanish-flag.png"
+              alt="Drapeau espagnol"
+            />
+            <p>Espagnol</p>
+          </div>
+
+          <div class="languages__img">
+            <img
+              src="./public/images/languages/italian-flag.png"
+              alt="Drapeau italien"
+            />
+            <p>Italien</p>
+          </div>
+
+          <div class="languages__img">
+            <img
+              src="./public/images/languages/german-flag.png"
+              alt="Drapeau allemand"
+            />
+            <p>Allemand</p>
+          </div>
+
+          <div class="languages__img">
+            <img
+              src="./public/images/languages/brazilian-flag.png"
+              alt="Drapeau brésilien"
+            />
+            <p>Portugais</p>
+          </div>
+
+          <div class="languages__img">
+            <img
+              src="./public/images/languages/russian-flag.png"
+              alt="Drapeau russe"
+            />
+            <p>Russe</p>
+          </div>
+
+          <div class="languages__img">
+            <img
+              src="./public/images/languages/chinese-flag.png"
+              alt="Drapeau chinois"
+            />
+            <p>Chinois</p>
+          </div>
+
+          <div class="languages__img">
+            <img
+              src="./public/images/languages/japan-flag.png"
+              alt="Drapeau japonais"
+            />
+            <p>Japonais</p>
+          </div>
+        </div>
+
+        <div class="languages__btn">
+          <button>Commencez gratuitement</button>
+        </div>
+      </div>
+    </div>
+    <!-- Languages -->
+
+    <!-- Press -->
+    <div id="press">
+      <div class="press__img">
+        <img
+          src="./public/images/press/logo-financial-times.png"
+          alt="Logo de Financial Times"
+          class="press__img--none"
+        />
+
+        <img
+          src="./public/images/press/logo-cosmo.png"
+          alt="Logo de Cosmopolitan"
+        />
+
+        <img
+          src="./public/images/press/logo-huffpost.png"
+          alt="Logo de Huffpost"
+        />
+
+        <img
+          src="./public/images/press/logo-lexpress.png"
+          alt="Logo de L'Express"
+        />
+
+        <img
+          src="./public/images/press/logo-france-2.png"
+          alt="Logo de France 2"
+          class="press__img--none"
+        />
+      </div>
+    </div>
+    <!-- Press -->
+
+    <!-- Learning -->
+    <div id="learning">
+      <div class="learning__content">
+        <h2>Pourquoi choisir MosaLingua ?</h2>
+
+        <div class="learning__cards">
+          <div class="learning__card">
+            <img
+              src="./public/images/learning/icon-brain.png"
+              alt="Icone du cerveau"
+            />
+            <h3>La méthode MosaLearning&reg;</h3>
+            <p>
+              Obtenez un maximum de résultats en un minimum de temps, grâce à
+              notre méthode qui repose sur la science cognitive.
+            </p>
+          </div>
+
+          <div class="learning__card">
+            <img
+              src="./public/images/learning/icon-web.png"
+              alt="Icone d'écrans"
+            />
+            <h3>Un véritable coaching</h3>
+            <p>
+              Nous serons toujours à vos côtés pour maintenir votre motivation à
+              son maximum et vous aider à apprendre votre langue-cible.
+            </p>
+          </div>
+
+          <div class="learning__card">
+            <img
+              src="./public/images/learning/icon-time.png"
+              alt="Icone du chronomètre"
+            />
+            <h3>
+              Du contenu pratique dont <br />
+              vous avez vraiment besoin
+            </h3>
+            <p>
+              Concentrez-vous sur l'apprentissage du 20% dont vous aurez besoin
+              80% du temps (pas de temps perdu) !
+            </p>
+          </div>
+        </div>
+
+        <div class="learning__p">
+          <p>&#10142; En savoir &plus;</p>
+        </div>
+      </div>
+    </div>
+    <!-- Learning -->
+
+    <!-- Datas -->
+    <div id="datas">
+      <div class="datas__content">
+        <div class="datas__p--lineHeight">
+          <div class="datas__p--font">
+            <p>&plus; 11 millions</p>
+          </div>
+          <p>D'UTILISATEURS</p>
+        </div>
+
+        <div class="datas__p--lineHeight datas__content__none">
+          <div class="datas__p--font">
+            <p>4,7/5 &starf;</p>
+          </div>
+          <p>&Eacute;VALUATION</p>
+        </div>
+
+        <div class="datas__p--lineHeight datas__content__none">
+          <p>11 ans</p>
+          <p>D'EXP&Eacute;RIENCE D'ENSEIGNEMENT</p>
+        </div>
+      </div>
+    </div>
+    <!-- Datas -->
+
+    <!-- Blog -->
+    <div id="blog">
+      <div class="blog__content">
+        <h2>LE BLOG</h2>
+
+        <div class="blog__cards">
+          <div class="blog__card">
+            <img
+              src="./public/images/blog/apprendre-le-russe-en-ligne.jpg"
+              alt="Château russe"
+              class="blog__img--width"
+            />
+            <div class="blog__div">
+              <a><h3>Comment apprendre le russe en ligne ?</h3></a>
+
+              <p>
+                Vous avez décidé de franchir le pas et d'apprendre le russe en
+                ligne ? Super ! Le vaste monde d'Internet déborde de moyens
+                [...].
+              </p>
+
+              <div class="blog__div--row">
+                <p>26/01/2022</p>
+                <div class="blog__img">
+                  <a
+                    ><img
+                      src="./public/images/blog/comment_icon.svg"
+                      alt="Icon des commentaires"
+                  /></a>
+                  <a
+                    ><img
+                      src="./public/images/blog/send-icon.svg"
+                      alt="Icone d'envoi"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__card">
+            <img
+              src="./public/images/blog/comment-apprendre-le-russe.jpg"
+              alt="Château russe"
+              class="blog__img--width"
+            />
+            <div class="blog__div">
+              <a><h3>Comment apprendre le russe ?</h3></a>
+
+              <p>
+                La langue russe peut paraître compliquée mais il y a des astuces
+                pour apprendre le russe facilement. Que ce soit pour voyager,
+                [...].
+              </p>
+
+              <div class="blog__div--row">
+                <p>24/01/2022</p>
+                <div class="blog__img">
+                  <a
+                    ><img
+                      src="./public/images/blog/comment_icon.svg"
+                      alt="Icone des commentaires"
+                  /></a>
+                  <a
+                    ><img
+                      src="./public/images/blog/send-icon.svg"
+                      alt="Icone d'envoi"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__card">
+            <img
+              src="./public/images/blog/apprendre-le-japonais.jpg"
+              alt="Réveil"
+              class="blog__img--width"
+            />
+            <div class="blog__div">
+              <a><h3>Combien de temps pour apprendre le japonais ?</h3></a>
+
+              <p>
+                Apprendre le japonais n'est pas un parcours facile. C'est
+                d'ailleurs une des langues les plus difficiles à apprendre à
+                cause [...].
+              </p>
+
+              <div class="blog__div--row">
+                <p>17/01/2022</p>
+                <div class="blog__img">
+                  <a
+                    ><img
+                      src="./public/images/blog/comment_icon.svg"
+                      alt="Icone des commentaires"
+                  /></a>
+                  <a
+                    ><img
+                      src="./public/images/blog/send-icon.svg"
+                      alt="Icone d'envoi"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Blog -->
+
+    <!-- Team -->
+    <div id="team">
+      <div class="team__content">
+        <h2>L'&Eacute;QUIPE</h2>
+
+        <h3>
+          Progressez grâce à notre équipe de polyglottes, de <br />
+          professeurs et de passionnés des langues :
+        </h3>
+
+        <div class="team__cards">
+          <div class="team__card">
+            <img src="./public/images/team/avatar4.png" alt="Avatar" />
+            <div class="team--opacity"></div>
+            <p class="team__p--opacity">
+              Benoit M.<br />
+              <span>France</span>
+            </p>
+            <img
+              src="./public/images/team/mini-french-flag.png"
+              alt="Drapeau français"
+            />
+          </div>
+
+          <div class="team__card">
+            <img src="./public/images/team/avatar12.png" alt="Avatar" />
+            <div class="team--opacity"></div>
+            <p class="team__p--opacity">
+              Enzo A.<br />
+              <span>Italia</span>
+            </p>
+            <img
+              src="./public/images/team/mini-italian-flag.png"
+              alt="Drapeau italien"
+            />
+          </div>
+
+          <div class="team--none">
+            <img src="./public/images/team/avatar15.png" alt="Avatar" />
+            <div class="team--opacity"></div>
+            <p class="team__p--opacity">
+              Patrice P.<br />
+              <span>France</span>
+            </p>
+            <img
+              src="./public/images/team/mini-french-flag.png"
+              alt="Drapeau français"
+            />
+          </div>
+
+          <div class="team--none">
+            <img src="./public/images/team/avatar10.png" alt="Avatar" />
+            <div class="team--opacity"></div>
+            <p class="team__p--opacity">
+              Fernando S.<br />
+              <span>España</span>
+            </p>
+            <img
+              src="./public/images/team/mini-spanish-flag.png"
+              alt="Drapeau espagnol"
+            />
+          </div>
+
+          <div class="team--none">
+            <img src="./public/images/team/avatar2.png" alt="Avatar" />
+            <div class="team--opacity"></div>
+            <p class="team__p--opacity">
+              Alice W.<br />
+              <span>Deutschland</span>
+            </p>
+            <img
+              src="./public/images/team/mini-german-flag.png"
+              alt="Drapeau allemand"
+            />
+          </div>
+
+          <div class="team--none">
+            <img src="./public/images/team/avatar.png" alt="Avatar" />
+            <div class="team--opacity"></div>
+            <p class="team__p--opacity">
+              John B.<br />
+              <span>UK</span>
+            </p>
+            <img
+              src="./public/images/team/mini-uk-flag.png"
+              alt="Drapeau anglais"
+            />
+          </div>
+
+          <div class="team__card">
+            <img src="./public/images/team/avatar14.png" alt="Avatar" />
+            <div class="team--opacity"></div>
+            <p class="team__p--opacity">
+              Ava U.<br />
+              <span>USA</span>
+            </p>
+            <img
+              src="./public/images/team/mini-usa-flag.png"
+              alt="Drapeau états-unien"
+            />
+          </div>
+
+          <div class="team__card">
+            <img src="./public/images/team/avatar7.png" alt="Avatar" />
+            <div class="team--opacity"></div>
+            <p class="team__p--opacity">
+              Carla S.<br />
+              <span>Brasil</span>
+            </p>
+            <img
+              src="./public/images/team/mini-brazilian-flag.png"
+              alt="Drapeau brésilien"
+            />
+          </div>
+
+          <div class="team__card">
+            <img src="./public/images/team/avatar6.png" alt="Avatar" />
+            <div class="team--opacity"></div>
+            <p class="team__p--opacity">
+              Elena E.<br />
+              <span>Росси́я</span>
+            </p>
+            <img
+              src="./public/images/team/mini-russian-flag.png"
+              alt="Drapeau russe"
+            />
+          </div>
+
+          <div class="team--none">
+            <img src="./public/images/team/avatar3.png" alt="Avatar" />
+            <div class="team--opacity"></div>
+            <p class="team__p--opacity">
+              Saya O.<br />
+              <span>Italia</span>
+            </p>
+            <img
+              src="./public/images/team/mini-italian-flag.png"
+              alt="Drapeau italien"
+            />
+          </div>
+
+          <div class="team--none">
+            <img src="./public/images/team/avatar8.png" alt="Avatar" />
+            <div class="team--opacity"></div>
+            <p class="team__p--opacity">
+              Emma E.<br />
+              <span>Deutschland</span>
+            </p>
+            <img
+              src="./public/images/team/mini-german-flag.png"
+              alt="Drapeau allemand"
+            />
+          </div>
+
+          <div class="team--none">
+            <img src="./public/images/team/avatar9.png" alt="Avatar" />
+            <div class="team--opacity"></div>
+            <p class="team__p--opacity">
+              Milo Y.<br />
+              <span>Italia</span>
+            </p>
+            <img
+              src="./public/images/team/mini-italian-flag.png"
+              alt="Drapeau italien"
+            />
+          </div>
+
+          <div class="team--none">
+            <img src="./public/images/team/avatar13.png" alt="Avatar" />
+            <div class="team--opacity"></div>
+            <p class="team__p--opacity">
+              Mira K.<br />
+              <span>France</span>
+            </p>
+            <img
+              src="./public/images/team/mini-french-flag.png"
+              alt="Drapeau français"
+            />
+          </div>
+
+          <div class="team__p">
+            <p>... et bien d'autres !</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team -->
+
+    <!-- Testimony -->
+    <div id="testimony">
+      <div class="testimony__content">
+        <h2>T&Eacute;MOIGNAGES</h2>
+
+        <h3>
+          Rejoignez nos 11 millions d’utilisateurs à travers le <br />
+          monde
+        </h3>
+
+        <div class="testimony__cards">
+          <div class="testimony__card">
+            <p>
+              « J’utilise MosaLingua tous les jours. Cet été, j’ai pu parler de
+              façon aisée avec les Espagnols pendant mes vacances ! »
+            </p>
+            <div class="testimony__div--row">
+              <img src="./public/images/testimony/avatar11.png" alt="Avatar" />
+              <p>
+                <span>Christophe P.</span> <br />
+                France
+              </p>
+            </div>
+          </div>
+
+          <div class="testimony__card">
+            <p>
+              « Grâce à MosaLingua, je lis maintenant mes premiers livres en
+              anglais et arrive à tenir une conversation Skype en anglais avec
+              un collègue américain ! Quel bonheur ! C’est une barrière qui
+              tombe ! Moi qui me croyait nulle en langue ! »
+            </p>
+            <div class="testimony__div--row">
+              <img src="./public/images/testimony/avatar16.png" alt="Avatar" />
+              <p>
+                <span>Thérésa W.</span> <br />
+                France
+              </p>
+            </div>
+          </div>
+
+          <div class="testimony__card">
+            <p>
+              « MosaLingua est l’application qui vous simplifie l’apprentissage
+              des langues ! J’ai essayé plusieurs méthodes d’auto-apprentissage
+              auparavant mais ma préférée est MosaLingua ! »
+            </p>
+            <div class="testimony__div--row">
+              <img src="./public/images/testimony/avatar5.png" alt="Avatar" />
+              <p>
+                <span>Mao F.</span> <br />
+                France
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimony -->
+
+    <!-- Footer -->
+    <footer>
+      <div id="footer__content">
+        <div class="footer__div--row">
+          <a href="#header" class="footer__img--width"
+            ><img
+              src="./public/images/footer/logo-mosa-footer.png"
+              alt="Logo de Mosalingua"
+          /></a>
+
+          <div class="footer__link">
+            <h3>PLAN DU SITE</h3>
+
+            <a href="#header"><p>Home</p></a>
+            <a href="#header"><p>Blog</p></a>
+            <a href="#header"><p>&Agrave; propos de Mosalingua</p></a>
+            <a href="#header"><p>Témoignages</p></a>
+            <a href="#header"><p>La méthode MOSA Learning&reg;</p></a>
+            <a href="#header"><p>Certificat Mosalingua</p></a>
+            <a href="#header"><p>Offre pour les entreprises</p></a>
+            <a href="#header"><p>Comment offrir Mosalingua ?</p></a>
+            <a href="#header"><p>Espace presse</p></a>
+            <a href="#header"><p>Devenir affilié</p></a>
+            <a href="#header"><p>Guest post et article invité</p></a>
+            <a href="#header"><p>CPF: nos formules</p></a>
+            <a href="#header"><p>Politique de confidentialité</p></a>
+            <a href="#header"><p>Contact</p></a>
+          </div>
+
+          <div class="footer__link">
+            <h3>NOS APPS / COURS</h3>
+
+            <a href="#header"><p>Tous nos cours de langues</p></a>
+            <a href="#header"><p>Anglais</p></a>
+            <a href="#header"><p>Anglais des Affaires</p></a>
+            <a href="#header"><p>Anglais Médical</p></a>
+            <a href="#header"><p>Espagnol</p></a>
+            <a href="#header"><p>Espagnol des Affaires</p></a>
+            <a href="#header"><p>Italien</p></a>
+            <a href="#header"><p>Portugais</p></a>
+            <a href="#header"><p>Allemand</p></a>
+            <a href="#header"><p>Chinois mandarin</p></a>
+            <a href="#header"><p>Russe</p></a>
+            <a href="#header"><p>Français</p></a>
+            <a href="#header"><p>Anglais TOEIC</p></a>
+            <a href="#header"><p>Anglais TOEFL</p></a>
+            <a href="#header"
+              ><p>
+                MosaLinguaPremium (Web &amp; <br />
+                Mobile)
+              </p></a
+            >
+          </div>
+
+          <div class="footer__link">
+            <h3>RESSOURCES</h3>
+
+            <a href="#header"><p>Notre podcast The Language Lab</p></a>
+            <a href="#header"><p>Ressources pour apprendre l'anglais</p></a>
+            <a href="#header"><p>Ressources pour apprendre l'italien</p></a>
+            <a href="#header"><p>Ressources pour apprendre l'espagnol</p></a>
+            <a href="#header"><p>Ressources pour apprendre l'allemand</p></a>
+            <a href="#header"><p>Ressources pour apprendre le portugais</p></a>
+            <a href="#header"><p>Ressources pour apprendre le français</p></a>
+            <a href="#header"><p>Ressources pour apprendre le russe</p></a>
+            <a href="#header"><p>Ressources pour apprendre le japonais</p></a>
+            <a href="#header"><p>Ressources pour apprendre le chinois</p></a>
+            <a href="#header"
+              ><p>Ressources de formations pour entreprises</p></a
+            >
+            <a href="#header"><p>Guide gratuit "Prononciation Anglais"</p></a>
+            <a href="#header"><p>Guide gratuit "Prononciation Espagnole"</p></a>
+            <a href="#header"><p>Guide gratuit "Grammaire Anglaise"</p></a>
+            <a href="#header"
+              ><p>eBook gratuit « Les Verbes irréguliers anglais »</p></a
+            >
+            <a href="#header"
+              ><p>
+                eBook gratuit « Les 7 outils indispen- <br />
+                sables pour apprendre une langue »
+              </p></a
+            >
+            <a href="#header"><p>Ressources pour apprendre l’arabe</p></a>
+          </div>
+
+          <div class="footer__link">
+            <h3>METHODES</h3>
+
+            <a href="#header"><p>Apprendre une langue</p></a>
+            <a href="#header"><p>Apprendre l'anglais</p></a>
+            <a href="#header"><p>Parler anglais rapidement</p></a>
+            <a href="#header"
+              ><p>Améliorer votre prononciation en anglais</p></a
+            >
+            <a href="#header"><p>Apprendre la grammaire anglaise</p></a>
+            <a href="#header"><p>Apprendre l'anglais des affaires</p></a>
+            <a href="#header"><p>Apprendre l'espagnol rapidement</p></a>
+            <a href="#header"
+              ><p>Améliorer votre prononciation en espagnol</p></a
+            >
+            <a href="#header"><p>Apprendre l'espagnol professionnel</p></a>
+            <a href="#header"><p>Apprendre l'italien rapidement</p></a>
+            <a href="#header"><p>Apprendre l'allemand rapidement</p></a>
+            <a href="#header"><p>Apprendre la grammaire allemand</p></a>
+            <a href="#header"><p>Apprendre le portugais rapidement</p></a>
+            <a href="#header"><p>Apprendre le chinois mandarin</p></a>
+            <a href="#header"><p>Apprendre le japonais</p></a>
+            <a href="#header"><p>Nos guides de conversation gratuits</p></a>
+            <a href="#header"><p>Guide de conversation anglais</p></a>
+            <a href="#header"><p>Guide de conversation allemand</p></a>
+            <a href="#header"><p>Guide de conversation espagnol</p></a>
+            <a href="#header"><p>Guide de conversation italien</p></a>
+            <a href="#header"
+              ><p>Guide de conversation portugais brésilien</p></a
+            >
+            <a href="#header"><p>Guide de conversation chinois</p></a>
+            <a href="#header"><p>Guide de conversation russe</p></a>
+          </div>
+        </div>
+
+        <div class="footer__div--rowWrap">
+          <div class="footer__div">
+            <p class="footer__p--gray">
+              &copy; Copyright 2022. Tous droits réservés.
+            </p>
+            <a href="#header"><p>Mentions légales</p></a><span>|</span>
+            <a href="#header"><p>Déclaration de protection des données</p></a>
+          </div>
+
+          <div class="footer__img">
+            <a href="#header"
+              ><img
+                src="./public/images/footer/logo-facebook.svg"
+                alt="Logo de Facebook"
+            /></a>
+            <a href="#header"
+              ><img
+                src="./public/images/footer/logo-instagram.svg"
+                alt="Logo d'Instagram"
+            /></a>
+            <a href="#header"
+              ><img
+                src="./public/images/footer/logo-twitter.svg"
+                alt="Logo de Twitter"
+            /></a>
+            <a href="#header"
+              ><img
+                src="./public/images/footer/logo-youtube.svg"
+                alt="Logo de Youtube"
+            /></a>
+            <a href="#header"
+              ><img
+                src="./public/images/footer/logo-pinterest.svg"
+                alt="Logo de Pinterest"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Sidebar-footer -->
+    <div id="sidebar--block"></div>
+    <!-- Sidebar-footer -->
+  </body>
+</html>
